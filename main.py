@@ -1,6 +1,6 @@
 from telegram.ext import CommandHandler, Updater
 import os
-from .commands import start, cinema_listings
+from app.commands import start, cinema_listings
 
 TOKEN = os.environ.get('TOKEN')
 PORT = int(os.environ.get('PORT', '8443'))
