@@ -3,7 +3,7 @@ from commands import start
 
 TOKEN = 'your_bot_token'
 
-if __name__ == '__main__':
+if __name__ == 'main':
     updater = Updater(token=TOKEN)
     dispatcher = updater.dispatcher
 
