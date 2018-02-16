@@ -1,11 +1,10 @@
 from telegram.ext import CommandHandler, Updater
-from commands import start, cinema_listings
 import os
+from .commands import start, cinema_listings
 
 TOKEN = os.environ.get('TOKEN')
 PORT = int(os.environ.get('PORT', '8443'))
 WEBHOOK_URL = os.environ.get('WEBHOOK_URL')
-BASE_URL = os.environ.get('BASE_URL')
 
 if __name__ == '__main__':
     updater = Updater(token=TOKEN)

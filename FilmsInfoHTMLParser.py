@@ -1,5 +1,5 @@
 from html.parser import HTMLParser
-from Film import Film
+from .Film import Film
 
 
 class FilmsInfoHTMLParser(HTMLParser):

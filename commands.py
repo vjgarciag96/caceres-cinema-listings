@@ -1,8 +1,10 @@
-from main import BASE_URL
+import os
 import urllib
 from urllib.request import urlopen
 from FilmsInfoHTMLParser import FilmsInfoHTMLParser
 from FilmsImagesHTMLParser import FilmsImagesHTMLParser
+
+BASE_URL = os.environ.get('BASE_URL')
 
 def start(bot, update):
     bot.send_message(chat_id=update.message.chat_id, text="Hello World!!")
