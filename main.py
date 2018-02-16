@@ -6,7 +6,7 @@ TOKEN = os.environ.get('TOKEN')
 PORT = int(os.environ.get('PORT', '8443'))
 WEBHOOK_URL = os.environ.get('WEBHOOK_URL')
 
-if __name__ == 'main':
+if __name__ == '__main__':
     updater = Updater(token=TOKEN)
     dispatcher = updater.dispatcher
 
